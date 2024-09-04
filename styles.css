@@ -1,38 +1,59 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .hero, .cta {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
-    padding: 20px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
+.hero h1, .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
 .features, .ai-diagnostics {
-    padding: 20px 0;
+    padding: 50px 0;
+    background: #f0f0f0;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
-    border: 1px solid #ccc;
+    background: white;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
     margin: 10px;
-    padding: 10px;
-    flex-basis: 24%;
+    flex-basis: 22%;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-header {
@@ -40,40 +61,36 @@ body, html {
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
+    width: 50px;
+    height: 50px;
     background-size: contain;
     margin-bottom: 10px;
 }
 
-.eye { background-image: url('icons/eye.svg'); }
-.activity { background-image: url('icons/activity.svg'); }
-.alert { background-image: url('icons/alert.svg'); }
-.chart { background-image: url('icons/chart.svg'); }
-
 .btn {
-    background-color: #fff;
-    color: #007bff;
+    background-color: #007bff;
+    color: white;
     border: none;
     padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
 }
 
 .btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-.btn.submit {
-    width: 100%;
-    background-color: #007bff;
-    color: #fff;
+.btn.large {
+    padding: 15px 30px;
+    font-size: 1.2rem;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
