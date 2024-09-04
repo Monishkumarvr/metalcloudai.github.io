@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero, .cta {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.features, .ai-diagnostics {
+    padding: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 24%;
+    text-align: center;
+}
+
+.card-header {
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.eye { background-image: url('icons/eye.svg'); }
+.activity { background-image: url('icons/activity.svg'); }
+.alert { background-image: url('icons/alert.svg'); }
+.chart { background-image: url('icons/chart.svg'); }
+
+.btn {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.submit {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
